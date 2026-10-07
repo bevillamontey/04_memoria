@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void firsFit(int blocksize[],int m,const int processSize[],int n){
+void firstFit(int blockSize[],int m,const int processSize[],int n){
 
   int* allocation = new int[n];
   
@@ -39,9 +39,9 @@ int main() {
     int blockSize[] = {100,500,200,300,600};
   
     int processSize[] = {212,417,112,301};
-    int m = sizeof(blockSIze) / sizeof(blockSIze[0]);
-    int n = sizeof(blockSIze) / sizeof(processSize[0]);
+    int m = sizeof(blockSize) / sizeof(blockSize[0]);
+    int n = sizeof(blockSize) / sizeof(processSize[0]);
     
-    firstFit(blockSIze,m,processSize,n);
+    firstFit(blockSize,m,processSize,n);
     return 0;
 }
